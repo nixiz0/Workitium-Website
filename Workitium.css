@@ -520,7 +520,6 @@
   .nav-logo ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
   }
   
   .nav-logo ul li a:hover {
@@ -528,7 +527,7 @@
   }
   
 /* Responsive : */
-@media (max-width: 600px) {
+@media (max-width: 599px) {
 .nav-logo {
     flex-direction: column;
 }
@@ -559,6 +558,21 @@
     .nav-logo ul li {
         margin: 0.8em 0;
     }
+
+    .nav-logo ul li a {
+      color: rgb(0, 0, 0);
+      font-size: 1.4em;
+    }
+    
+    .nav-logo ul li a:hover {
+       color: rgb(93, 93, 93);
+    }
+}
+
+@media (min-width: 650px) {
+  .nav-logo ul li a {
+    font-size: 1.4em;
+  }
 }
 
 
