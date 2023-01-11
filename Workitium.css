@@ -464,58 +464,6 @@
 /* CLASSES DES NAV #########################*/
 /********************************************/
 
-/* HTML A METTRE SUR LE SITE PLUS TARD :
-<nav class="nav-basic">
-    <div class="sous_nav">
-        <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Produits</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-*/
-/* NAV BASIC ############################# */
-.nav-basic {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-}
-
-    .nav-basic ul {
-        display: flex;
-        list-style: none;
-        padding: 0.4em;
-        margin: 0;
-    }
-
-        .sous_nav ul li {
-            padding: 1em;
-        }
-
-        .sous_nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-
-        .sous_nav ul li a:hover {
-            color: #ccc;
-        }
-
-/* Responsive : */
-@media (max-width: 610px) {
-    .nav-basic ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-basic ul li {
-        padding: 0.5em;
-    }
-}
-
 
 /* HTML A METTRE SUR LE SITE PLUS TARD : 
 <nav class="nav-logo">
@@ -533,23 +481,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: rgb(0, 208, 255);
     height: 6em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     position: relative;
   }
   
   .logo {
-    color: #333;
+    color: white;
     font-size: 1.5em;
     text-decoration: none;
     font-weight: bold;
     margin-left: 2em;
+    display: flex;
   }
     /* Changer la taille de l'image */
     .logo img {
-        width: 8rem;
+        width: 5rem;
         height: auto;
+    }
+
+    .logo h2 {
+      margin-top: 1rem;
+      margin-left: 1.5rem;
     }
   
   .nav-logo ul {
@@ -560,17 +514,17 @@
   }
   
   .nav-logo ul li {
-        margin: 0 10px;
+    margin: 0 10px;
   }
   
   .nav-logo ul li a {
-        color: #333;
-        text-decoration: none;
-        font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
   }
   
   .nav-logo ul li a:hover {
-        color: #777;
+     color: rgb(211, 211, 211);
   }
   
 /* Responsive : */
@@ -583,318 +537,29 @@
         margin-bottom: 1.8em;
         margin-left: 0em;
         margin-top: 0.5em;
+        display: block;
+    }
+
+    .logo h2 {
+      display: none;
     }
 
         /* Adapter taille image selon écran */
         .logo img {
-            width: 8rem;
+            width: 4.5rem;
             height: auto;
         }
     
     .nav-logo ul {
         flex-direction: column;
         margin-right: 2em;
+        margin-top: 0;
     }
 
     .nav-logo ul li {
         margin: 0.8em 0;
     }
 }
-
-
-/* HTML A METTRE SUR LE SITE PLUS TARD : 
-<nav class="nav_searchbar">
-    <a href="#" class="searchbar_logo"><img src="" alt="LOGO"></a>
-    <ul>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">À propos</a></li>
-      <li><a href="#">Produits</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="search-container">
-      <form>
-        <input type="text" placeholder="Rechercher...">
-        <button type="submit"> Envoie </button>
-      </form>
-    </div>
-</nav>
-*/
-/* NAV SEARCHBAR ############################# */
-.nav_searchbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    height: 5.5em;
-    position: relative;
-  }
-  
-  .searchbar_logo {
-    color: #fff;
-    font-size: 1.5em;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 2em;
-  }
-    /* Changer la taille de l'image */
-    .searchbar_logo img {
-        width: 8rem;
-        height: auto;
-    }
-  
-    .nav_searchbar ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-  
-    .nav_searchbar ul li {
-        margin: 0 10px;
-    }
-  
-    .nav_searchbar ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.2em;
-    }
-  
-    .nav_searchbar ul li a:hover {
-        color: #ccc;
-    }
-  
-  .search-container {
-    position: relative;
-  }
-
-    .search-container form {
-        
-    }
-  
-        .search-container input {
-            border: none;
-            background-color: #333;
-            color: #fff;
-            font-size: 1.2em;
-            width: 8em;
-        }
-        
-        .search-container button {
-            border: none;
-            background-color: transparent;
-            margin-right: 1.5em;
-            color: #fff;
-            font-size: 1.2em;
-            cursor: pointer;
-        }
-        
-        .search-container button:hover {
-            color: #ccc;
-        }
-        
-        .search-container input:focus {
-            outline: none;
-        }
-    
-/* Responsive : */
-@media (max-width: 860px) {
-.nav_searchbar {
-    flex-direction: column;
-    height: 8em;
-}
-
-    .searchbar_logo {
-        text-align: center;
-        margin-bottom: 0em;
-        margin-left: 0em;
-        margin-top: 0.5em;
-    }
-        /* Adapter taille image selon écran */
-        .searchbar_logo img {
-            width: 8rem;
-            height: auto;
-        }
-        
-    .nav_searchbar ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-  
-    .nav_searchbar ul li {
-        
-    }
-  
-    .nav_searchbar ul li a {
-        color: #fff ;
-        text-decoration: none;
-        font-size: 1.2em;
-    }
-  
-    .nav_searchbar ul li a:hover {
-        color: #ccc;
-    }
-    
-    .search-container {
-        display: none;
-    }
-}
-
-@media (max-width:500px) {
-.nav_searchbar {
-    /* A RE-RÉGLER SELON TAILLE IMAGE */
-    height: 15em;
-    text-align: center;
-}
-    .logo {
-        margin-top: 0.4em;
-    }
-        /* Adapter taille image selon écran */
-        .logo img {
-            width: 2rem;
-            height: auto;
-        }
-  
-    .nav_searchbar ul {
-        background-color: #333;
-        font-size: 0.9em;
-        flex-direction: column;
-    }
-
-}
-
-
-/* HTML A METTRE SUR LE SITE PLUS TARD : 
-<nav class="nav_soustxt">
-    <a href="#" class="soustxt_logo"><img src="" alt="LOGO"></a>
-    <ul id="ul_fixe" class="list-reset">
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">À propos</a></li>
-      <li><a href="#">Produits</a>
-        <ul class="submenu list-reset">
-          <li><a href="#">Catégorie 1</a></li>
-          <li><a href="#">Catégorie 2</a></li>
-          <li><a href="#">Catégorie 3</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-*/
-/* NAV SOUSTXT ############################# */
-.nav_soustxt {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    height: 5em;
-  }
-  
-    .soustxt_logo {
-        color: #333;
-        font-size: 1.5em;
-        text-decoration: none;
-        font-weight: bold;
-        margin-left: 2em;
-    }
-
-        .soustxt_logo img {
-            width: 8rem;
-            height: auto;
-        }
-    
-    nav ul {
-        display: flex;
-        margin-right: 2em;
-    }
-    
-    .nav_soustxt ul li {
-        margin: 0 1em;
-        position: relative;
-    }
-    
-    .nav_soustxt ul li a {
-        color: #333;
-        text-decoration: none;
-        font-size: 1.2em;
-    }
-
-    .nav_soustxt ul li a:hover {
-        color: #777;
-    }
-
-    .nav_soustxt ul li:hover .submenu {
-        display: flex;
-    }
-
-        .submenu {
-            display: none;
-            position: absolute;
-            left: 0;
-            right: 0;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 0em 1.5em 0em 1.5em;
-            width: 100%;
-            border-radius: 5%;
-        }
-
-        .submenu a {
-            display: flex;
-            padding: 0.5em;
-            color: #333;
-            text-decoration: none;
-        }
-
-
-/* Ajoutez ces règles ci-dessous pour la rendre responsive */
-@media (max-width: 600px) {
-.nav_soustxt {
-    flex-direction: column;
-  }
-
-  .soustxt_logo {
-    text-align: center;
-    margin-bottom: 1em;
-    margin-top: 1.2em;
-    margin-left: 0em;
-  }
-  
-    .soustxt_logo img {
-        /* A CHANGER SELON LA TAILLE DE L'IMAGE */
-        width: 8rem;
-        height: auto;
-    }
-
-  .nav_soustxt ul {
-    flex-direction: column;
-    margin: 0em;
-    padding: 0em;
-  }
-
-  .nav_soustxt ul li {
-    margin: 1em 0;
-  }
-  
-  .submenu {
-    position: static;
-  }
-
-    .submenu li {
-        font-size: 0.9em;
-    }
-
-    .submenu li a {
-        padding: 0em 0.3em 0em 0.3em;
-    }
-}
-
 
 
 /********************************************/
