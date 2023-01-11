@@ -37,6 +37,20 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2rem;
     }
 
+    .main_download {
+        margin-top: 2rem;
+    }
+
+        .main_download h4 {
+            padding: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .btn_download {
+            font-size: 1.1rem;
+        }
+
+
 @media (min-width:600px) {
     .presentation {
         margin-top: 5rem;
@@ -45,6 +59,14 @@ h1, h2, h3, h4, h5, h6 {
     .main_logo {
         width: 12rem;
         height: auto;
+    }
+
+    .main_download h4 {
+        font-size: 1.5rem;
+    }
+
+    .btn_download {
+        font-size: 1.2rem;
     }
 }
 
@@ -78,4 +100,12 @@ h1, h2, h3, h4, h5, h6 {
     .presentation .sous_p {
         font-size: 2.2rem;
     }
+
+        .main_download h4 {
+            font-size: 2rem;
+        }
+
+        .btn_download {
+            font-size: 1.4rem;
+        }
 }
