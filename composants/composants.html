@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="../Workitium-custom.css">
     <title> Workitium Composants </title>
 </head>
+
 <body class="reset-html">
 
     <nav class="nav-logo">
@@ -19,26 +21,56 @@
             <h2> Workitium </h2>
         </a>
         <ul>
-          <li><a href="../documentation/doc.html">Documentation</a></li>
-          <li><a href="./composants.html">Composants</a></li>
+            <li><a href="../documentation/doc.html">Documentation</a></li>
+            <li><a href="./composants.html">Composants</a></li>
         </ul>
     </nav>
 
     <div class="all_composants">
-        <div class="scroll-div">
-            <ul class="list-reset nav_composants">
-                <li><a class="a-reset nav_btn" href=""> aa </a></li>
-                <li><a class="a-reset nav_btn" href=""> aa </a></li>
-                <li><a class="a-reset nav_btn" href=""> aa </a></li>
-                <li><a class="a-reset nav_btn" href=""> aa </a></li>
-                <li><a class="a-reset nav_btn" href=""> aa </a></li>
-            </ul>
+        <div id="scroll" class="scroll-div">
+            <div class="separation_mobil">  </div>
+            <div class="sous_composants">
+                <ul class="list-reset nav_composants">
+                    <h5 style="text-shadow: 0px 2px 3px rgba(0, 183, 255, 0.65);"> NavBar </h5>
+
+                    <li><a class="nav_btn" href="#"> nav-basic </a></li>
+                    <li><a class="nav_btn" href="#"> nav-logo </a></li>
+                    <li><a class="nav_btn" href="#"> nav_searchbar </a></li>
+                    <li><a class="nav_btn" href="#"> nav_soustxt </a></li>
+                </ul>
+            </div>
+            <div class="sous_composants">
+                <ul class="list-reset nav_composants">
+                    <h5 style="text-shadow: 0px 2px 3px rgba(0, 255, 136, 0.65);"> Forms </h5>
+
+                    <li><a class="nav_btn" href="#"> form-basic </a></li>
+                </ul>
+            </div>
+            <div class="sous_composants">
+                <ul class="list-reset nav_composants">
+                    <h5 style="text-shadow: 0px 2px 3px rgba(255, 0, 0, 0.65);"> Footer </h5>
+
+                    <li><a class="nav_btn" href="#"> footer-basic </a></li>
+                    <li><a class="nav_btn" href="#"> footer-minimum </a></li>
+                    <li><a class="nav_btn" href="#"> footer-vertical </a></li>
+                    <li><a class="nav_btn" href="#"> footer-rgpd </a></li>
+                </ul>
+            </div>
+            
+
+            <div class="separation_mobil">  </div>
         </div>
-    
-        <div>
-    
+
+        <div class="welcome_composants">
+            <h2> Bienvenue dans les composants Workitium </h2>
+            <p>
+                Vous pouvez retrouver tous les composants officiels du framework, entièrement Responsive
+                qui sont à votre disposition !
+            </p>
         </div>
     </div>
 
+    <script src="./nav-fonction.js"></script>
 </body>
+
 </html>

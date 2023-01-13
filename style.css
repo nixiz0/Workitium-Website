@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding: 0.5rem;
     margin-top: 10rem;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.65);
 }
 
     .main_logo {
@@ -39,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .presentation .sous_p {
         color: #00d0ff;
+        text-shadow: 0px 4px 4px rgba(0,0,0,0.65);
         font-size: 2rem;
     }
 
@@ -53,6 +55,8 @@ h1, h2, h3, h4, h5, h6 {
 
         .btn_download {
             font-size: 1.1rem;
+            -webkit-box-shadow: 0px 13px 15px -6px rgba(0,0,0,0.53); 
+            box-shadow: 0px 13px 15px -6px rgba(0,0,0,0.53);
         }
 
 

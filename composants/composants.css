@@ -1,19 +1,131 @@
 .all_composants {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     padding: 2rem;
-    margin-left: 8rem;
-    margin-right: 8rem;
 }
 
 .scroll-div {
-    overflow-y: scroll;
+    overflow-x: hidden;
+    width: auto;
+    max-height: 50rem;
 }
 
-    .nav_composants {
-        margin-right: 1rem;
+.separation_mobil {
+    display: none;
+}
+
+    .sous_composants {
+        font-size: 0.9rem;
     }
 
-        .nav_btn {
-            padding: 0.5rem;
+    .sous_composants h5 {
+        font-size: 1.35rem;
+        padding: 0.5rem 0rem 0.8rem 0rem;
+    }
+
+        .nav_composants {
+            margin-right: 1rem;
         }
+
+        .nav_composants li {
+            padding: 0.2rem;
+        }
+
+            .nav_btn {
+                padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                position: relative;
+                display: inline-block;
+                outline: none;
+                border-radius: 0.8rem;
+                background: #212529;
+            }
+            .nav_btn:hover {
+                background: #fff;
+                color: #212529
+            }
+
+.welcome_composants {
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.65);
+}
+
+    .welcome_composants h2 {
+        font-size: 2.5rem;
+    }
+
+    .welcome_composants p {
+        font-size: 1.7rem;
+
+    }
+    
+
+@media (max-width:1450px) {
+.all_composants {
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+}
+
+    .welcome_composants {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media (max-width:850px) {
+.all_composants {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+}
+
+    .sous_composants {
+        font-size: 1.2rem;
+    }
+
+    .sous_composants h5 {
+        font-size: 1.6rem;
+    }
+
+    .welcome_composants {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width:599px) {
+    .all_composants {
+        margin-top: 7rem;
+        padding: 1.5rem 0rem 1.5rem 0rem;
+    }
+
+    .separation_mobil {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0.1rem;
+        background-color: black;
+        border-radius: 35%;
+    }
+
+    .welcome_composants {
+        margin-top: 1rem;
+    }
+
+    .welcome_composants h2 {
+        font-size: 2rem;
+    }
+
+    .welcome_composants p {
+        font-size: 1.3rem;
+    }
+}
