@@ -1,5 +1,10 @@
 /* METTRE POLICE ECRITURE GOOGLE FONTS */
 
+html body {
+    background-color: #495057;
+    color: white;
+}
+
 h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
@@ -26,7 +31,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .presentation p {
-        color: rgb(46, 46, 46);
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         margin-top: 0.4rem;
@@ -34,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .presentation .sous_p {
+        color: #00d0ff;
         font-size: 2rem;
     }
 
