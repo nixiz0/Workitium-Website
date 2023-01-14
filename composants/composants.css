@@ -167,3 +167,129 @@
         margin-bottom: 1.5rem;
     }
 }
+
+/*######################################*/
+/* STYLE POUR LES DIFFÉRENTS COMPOSANTS */
+/*######################################*/
+.the_composants {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+    .title_composant {
+        font-size: 2.5rem;
+        text-shadow: 0px 4px 4px rgba(0,0,0,0.65);
+    }
+
+    .txt_composant {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        text-shadow: 0px 4px 4px rgba(0,0,0,0.65);
+    }
+
+    .extrait_composants {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+        .extrait_nav-logo {
+            margin-bottom: 0rem;
+            font-size: 0.8rem;
+        }
+
+    .code_composants textarea{
+        margin-top: 1rem;
+        background-color: #5a5a5a;
+        color: #00d0ff;
+        resize : none;
+        text-shadow: 0px 4px 4px rgba(0,0,0,0.65);
+        border-radius: 8%;
+        font-size: 0.83rem;
+    }
+
+    .btn_copy {
+        margin-left: 9rem;
+        margin-bottom: 5rem;
+    }
+
+    .copy {
+        min-width: 100px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        background: #01b2d9;
+        box-shadow: 0 4px #171717;
+        }
+
+        .copy:hover {
+        box-shadow: 0 3px #171717;
+        top: 1px;
+        }
+
+        .copy:active {
+        box-shadow: 0 0 #171717;
+        top: 5px;
+    }
+    
+
+@media (max-width:850px) {
+.the_composants {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 2rem;
+}
+
+    .title_composant {
+        font-size: 2.2rem;
+    }
+
+    .txt_composant {
+        font-size: 1.2rem;
+    }
+
+    .extrait_composants {
+        display: flex;
+        justify-content: center;
+    }
+
+    .extrait_nav-logo {
+        margin-bottom: 0rem;
+        font-size: 0.9rem;
+    }
+
+    .btn_copy {
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width:599px) {
+.the_composants {
+    margin-left: 0rem;
+}
+
+    .title_composant {
+        font-size: 2rem;
+    }
+
+    .txt_composant {
+        font-size: 1rem;
+    }
+
+    .extrait_nav-logo {
+        margin-bottom: 11rem;
+        font-size: 0.9rem;
+    }
+
+    .code_composants textarea{
+        font-size: 0.65rem;
+    }
+
+}

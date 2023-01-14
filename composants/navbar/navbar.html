@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../0-Ressources/icon logo composants.png">
     <meta name="description" content="">
+    <link rel="stylesheet" href="../../1-Framework Workitium CSS/Workitium[0.0.1].css">
     <link rel="stylesheet" href="../composants.css">
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../../Workitium-custom.css">
@@ -15,8 +16,8 @@
 
 <body class="reset-html">
 
-    <nav class="nav-logo">
-        <a href="../../index.html" class="logo">
+    <nav class="nav-logo_custom">
+        <a href="../../index.html" class="logo_custom">
             <img src="../../0-Ressources/design logo Workitium color inverse.png" alt="LOGO">
             <h2> Workitium </h2>
         </a>
@@ -26,6 +27,245 @@
         </ul>
     </nav>
 
-</body>
+    <div class="all_composants">
+        <div id="scroll" class="scroll-div">
+            <div class="separation_mobil">  </div>
+            <div class="sous_composants">
+                <ul class="list-reset nav_composants">
+                    <h5 style="text-shadow: 0px 2px 3px rgba(0, 183, 255, 0.65);"> NavBar </h5>
 
+                    <li><a class="nav_btn" href="./navbar.html#nav-basic"> nav-basic </a></li>
+                    <li><a class="nav_btn" href="./navbar.html#nav-logo"> nav-logo </a></li>
+                    <li><a class="nav_btn" href="./navbar.html#nav_searchbar"> nav_searchbar </a></li>
+                    <li><a class="nav_btn" href="./navbar.html#nav_soustxt"> nav_soustxt </a></li>
+                </ul>
+            </div>
+            <div class="sous_composants">
+                <ul class="list-reset nav_composants">
+                    <h5 style="text-shadow: 0px 2px 3px rgba(0, 255, 136, 0.65);"> Forms </h5>
+
+                    <li><a class="nav_btn" href="../forms/forms.html"> form-basic </a></li>
+                </ul>
+            </div>
+            <div class="sous_composants">
+                <ul class="list-reset nav_composants">
+                    <h5 style="text-shadow: 0px 2px 3px rgba(255, 0, 0, 0.65);"> Footer </h5>
+
+                    <li><a class="nav_btn" href="../footer/footer.html"> footer-basic </a></li>
+                    <li><a class="nav_btn" href="../footer/footer.html"> footer-minimum </a></li>
+                    <li><a class="nav_btn" href="../footer/footer.html"> footer-vertical </a></li>
+                    <li><a class="nav_btn" href="../footer/footer.html"> footer-rgpd </a></li>
+                </ul>
+            </div>
+
+
+            <div class="separation_mobil">  </div>
+        </div> 
+
+        <div class="the_composants">
+            <!--VOICI UN COMPOSANT-->
+            <h2 class="title_composant" id="nav-basic"> #NAV-BASIC </h2>
+            <span class="txt_composant">
+                <p>
+                    NavBar classique avec un texte au centre horizontale qui va passer à la
+                    verticale en format téléphone.
+                </p> 
+            </span>
+            <div class="extrait_composants">
+                <nav class="nav-basic">
+                    <div class="sous_nav">
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">À propos</a></li>
+                            <li><a href="#">Produits</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="code_composants">
+                <!--TEXTAREA CODE COMPOSANT-->
+                <textarea name="code" id="textarea1" cols="51" rows="11" readonly>
+<nav class="nav-basic">
+    <div class="sous_nav">
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Produits</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+                </textarea>
+                <!--FIN DU TEXTAREA CODE-->
+
+                <div class="btn_copy">
+                    <button onclick="copyText('textarea1')" class="copy">Copy</button>
+                </div>
+
+            </div>
+            <!--FIN DU COMPOSANT ICI-->
+
+            <!--VOICI UN COMPOSANT-->
+            <h2 class="title_composant" id="nav-logo"> #NAV-LOGO </h2>
+            <span class="txt_composant">
+                <p>
+                    Voici une NavBar qui possède un logo sous format d'une image que vous avez
+                    juste à rajouter.
+                    Le logo sera au dessus et le texte en dessous à la verticale en format mobile.
+                </p> 
+            </span>
+            <div class="extrait_composants extrait_nav-logo">
+                <nav class="nav-logo">
+                    <a href="#" class="logo"><img src="" alt="LOGO"></a>
+                    <ul>
+                      <li><a href="#">Accueil</a></li>
+                      <li><a href="#">À propos</a></li>
+                      <li><a href="#">Produits</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="code_composants">
+                <!--TEXTAREA CODE COMPOSANT-->
+                <textarea name="code" id="textarea2" cols="51" rows="11" readonly>
+<nav class="nav-logo">
+    <a href="#" class="logo"><img src="" alt="LOGO"></a>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Produits</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+                </textarea>
+                <!--FIN DU TEXTAREA CODE-->
+                <div class="btn_copy">
+                    <button onclick="copyText('textarea2')" class="copy">Copy</button>
+                </div>
+
+            </div>
+            <!--FIN DU COMPOSANT ICI-->
+
+            <!--VOICI UN COMPOSANT-->
+            <h2 class="title_composant" id="nav_searchbar"> #NAV-SEARCHBAR </h2>
+            <span class="txt_composant">
+                <p>
+                    Ici vous avez une NavBar qui possède une barre de recherche pour
+                    pouvoir faire des recherches dynamiques au seins de votre site.
+                    Elle disparaît quand on passe en format téléphone et tablette.
+                </p> 
+            </span>
+            <div class="extrait_composants extrait_nav-logo">
+                <nav class="nav_searchbar">
+                    <a href="#" class="searchbar_logo"><img src="" alt="LOGO"></a>
+                    <ul>
+                      <li><a href="#">Accueil</a></li>
+                      <li><a href="#">À propos</a></li>
+                      <li><a href="#">Produits</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="search-container">
+                      <form>
+                        <input type="text" placeholder="Rechercher...">
+                        <button type="submit"> Envoie </button>
+                      </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="code_composants">
+                <!--TEXTAREA CODE COMPOSANT-->
+                <textarea name="code" id="textarea3" cols="51" rows="18" readonly>
+<nav class="nav_searchbar">
+    <a href="#" class="searchbar_logo"><img src="" alt="LOGO"></a>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Produits</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="search-container">
+      <form>
+        <input type="text" placeholder="Rechercher...">
+        <button type="submit"> Envoie </button>
+      </form>
+    </div>
+</nav>
+                </textarea>
+                <!--FIN DU TEXTAREA CODE-->
+                <div class="btn_copy">
+                    <button onclick="copyText('textarea3')" class="copy">Copy</button>
+                </div>
+
+            </div>
+            <!--FIN DU COMPOSANT ICI-->
+
+            <!--VOICI UN COMPOSANT-->
+            <h2 class="title_composant" id="nav_soustxt"> #NAV-SOUS-TXT </h2>
+            <span class="txt_composant">
+                <p>
+                    La NavBar sous txt (pour texte) permet d'avoir une NavBar qui possède un sous menu
+                    qui, dès lors que l'on passe notre souris dessus nous donne d'autres liens.
+                    Cela fonctionne dans tous les formats d'écrans.
+                </p> 
+            </span>
+            <div class="extrait_composants extrait_nav-logo">
+                <nav class="nav_soustxt">
+                    <a href="#" class="soustxt_logo"><img src="" alt="LOGO"></a>
+                    <ul id="ul_fixe" class="list-reset">
+                      <li><a href="#">Accueil</a></li>
+                      <li><a href="#">À propos</a></li>
+                      <li><a href="#">Produits</a>
+                        <ul class="submenu list-reset">
+                          <li><a href="#">Catégorie 1</a></li>
+                          <li><a href="#">Catégorie 2</a></li>
+                          <li><a href="#">Catégorie 3</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="code_composants">
+                <!--TEXTAREA CODE COMPOSANT-->
+                <textarea name="code" id="textarea3" cols="51" rows="18" readonly>
+<nav class="nav_soustxt">
+    <a href="#" class="soustxt_logo"><img src="" alt="LOGO"></a>
+    <ul id="ul_fixe" class="list-reset">
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Produits</a>
+        <ul class="submenu list-reset">
+          <li><a href="#">Catégorie 1</a></li>
+          <li><a href="#">Catégorie 2</a></li>
+          <li><a href="#">Catégorie 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+                </textarea>
+                <!--FIN DU TEXTAREA CODE-->
+                <div class="btn_copy">
+                    <button onclick="copyText('textarea3')" class="copy">Copy</button>
+                </div>
+
+            </div>
+            <!--FIN DU COMPOSANT ICI-->
+
+        </div>
+    </div>
+
+    <footer class="footer-vertical_custom">
+        <div class="vertical_social_custom">
+            <a href="https://www.youtube.com/@Initium0_0" target="_blank"><img width="38rem" height="auto" src="../../0-Ressources/ytb_logo.png" alt="logo réseaux"></a>
+            <a href="https://github.com/nixiz0?tab=overview&from=2023-01-01&to=2023-01-14" target="_blank"><img width="38rem" height="auto" src="../../0-Ressources/github_logo.png" alt="logo réseaux"></a>
+        </div>
+        <div class="vertical_copyright_custom">
+          <p>Copyright © 2023 Workitium. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../btn_copy_function.js"></script>
+</body>
 </html>
