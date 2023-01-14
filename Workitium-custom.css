@@ -848,7 +848,7 @@
 */
 /* FOOTER-VERTICAL ########################### */
 .footer-vertical {
-    background-color: #222;
+    background-color: rgb(48, 48, 48);
     color: #fff;
     padding: 2em 0;
   }
@@ -891,7 +891,7 @@
   
   .vertical_copyright p {
     margin: 0;
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
 @media (max-width: 768px) {
@@ -944,7 +944,7 @@
 
   .vertical_copyright p {
     margin: 0;
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
 }
 
