@@ -1,10 +1,3 @@
-/* 
-    Projet mon framework CSS pour designer + vite des sites 
-    Penser à faire des keyframes et anim que j'utilise, des alignements de texte, des flex
-    faire un framework le + automatisé possible à ma création de site web (et surtout logique)
-    Avec des noms de classes et variables cohérentes
-*/
-
 /****************************************************************************/
 /* CLASSES DE RESET #######################################################*/
 /***************************************************************************/
@@ -464,18 +457,6 @@
 /* CLASSES DES NAV #########################*/
 /********************************************/
 
-/* HTML A METTRE SUR LE SITE PLUS TARD :
-<nav class="nav-basic">
-    <div class="sous_nav">
-        <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Produits</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-*/
 /* NAV BASIC ############################# */
 .nav-basic {
     display: flex;
@@ -517,17 +498,6 @@
 }
 
 
-/* HTML A METTRE SUR LE SITE PLUS TARD : 
-<nav class="nav-logo">
-    <a href="#" class="logo"><img src="" alt="LOGO"></a>
-    <ul>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">À propos</a></li>
-      <li><a href="#">Produits</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-*/
 /* NAV LOGO ############################# */
 .nav-logo {
     display: flex;
@@ -599,26 +569,14 @@
     .nav-logo ul li {
         margin: 0.8em 0;
     }
+
+    .nav-logo ul li a {
+      color: white;
+    }
+
 }
 
 
-/* HTML A METTRE SUR LE SITE PLUS TARD : 
-<nav class="nav_searchbar">
-    <a href="#" class="searchbar_logo"><img src="" alt="LOGO"></a>
-    <ul>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">À propos</a></li>
-      <li><a href="#">Produits</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="search-container">
-      <form>
-        <input type="text" placeholder="Rechercher...">
-        <button type="submit"> Envoie </button>
-      </form>
-    </div>
-</nav>
-*/
 /* NAV SEARCHBAR ############################# */
 .nav_searchbar {
     display: flex;
@@ -700,7 +658,7 @@
 @media (max-width: 860px) {
 .nav_searchbar {
     flex-direction: column;
-    height: 8em;
+    height: 5rem;
 }
 
     .searchbar_logo {
@@ -744,7 +702,7 @@
 @media (max-width:500px) {
 .nav_searchbar {
     /* A RE-RÉGLER SELON TAILLE IMAGE */
-    height: 15em;
+    height: 10.5em;
     text-align: center;
 }
     .logo {
@@ -762,26 +720,13 @@
         flex-direction: column;
     }
 
+    .nav_searchbar li {
+      padding: 0.3rem;
+    }
+
 }
 
 
-/* HTML A METTRE SUR LE SITE PLUS TARD : 
-<nav class="nav_soustxt">
-    <a href="#" class="soustxt_logo"><img src="" alt="LOGO"></a>
-    <ul id="ul_fixe" class="list-reset">
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">À propos</a></li>
-      <li><a href="#">Produits</a>
-        <ul class="submenu list-reset">
-          <li><a href="#">Catégorie 1</a></li>
-          <li><a href="#">Catégorie 2</a></li>
-          <li><a href="#">Catégorie 3</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-*/
 /* NAV SOUSTXT ############################# */
 .nav_soustxt {
     display: flex;
@@ -881,6 +826,10 @@
   .nav_soustxt ul li {
     margin: 1em 0;
   }
+
+  .nav_soustxt ul li a {
+    color: white;
+  }
   
   .submenu {
     position: static;
@@ -901,23 +850,6 @@
 /* CLASSES DES FORMULAIRES #################*/
 /********************************************/
 
-/* HTML A METTRE SUR LE SITE PLUS TARD :
-<form class="form-basic">
-    <div class="basic_form-group">
-      <label form="name">Nom</label>
-      <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
-    </div>
-    <div class="basic_form-group">
-      <label form="email">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
-    </div>
-    <div class="basic_form-group">
-      <label form="message">Message</label>
-      <input type="textarea" class="form-control" id="message" placeholder="Entrez votre message">
-    </div>
-    <button type="submit">Envoyer</button>
-</form>
-*/
 /* FORM-BASIC ############################ */
 .form-basic {
     width: 90%;
@@ -955,6 +887,7 @@
     border-radius: 4px;
     box-sizing: border-box;
   }
+  
   
   .form-basic button[type="submit"] {
     font-size: 1rem;
@@ -994,42 +927,6 @@
 /* CLASSES FOOTERS #########################*/
 /********************************************/
 
-/* HTML A METTRE SUR LE SITE PLUS TARD : 
-<footer class="footer-basic">
-    <div class="basic_container">
-      <div class="basic_row">
-        <div class="basic_col">
-          <h3>A propos</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit lectus. Aliquam at blandit dui. 
-            Sed iaculis quam nisi, in egestas leo tempus a.
-          </p>
-        </div>
-        <div class="basic_col">
-          <h3>Liens utiles</h3>
-          <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="basic_col">
-          <h3>Suivez-nous</h3>
-          <ul class="basic_social-icons list-reset">
-            <li><a href="#" target="_blank"><img src="" alt="img logo réseaux"></a></li>
-            <li><a href="#" target="_blank"><img src="" alt="img logo réseaux"></a></li>
-            <li><a href="#" target="_blank"><img src="" alt="img logo réseaux"></a></li>
-            <li><a href="#" target="_blank"><img src="" alt="img logo réseaux"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="basic_copyright">
-        <p>Copyright &copy; 2023. Tous droits réservés.</p>
-    </div>
-</footer>
-*/
 /* FOOTER-BASIC ########################### */
 .footer-basic {
     background-color: #333;
@@ -1104,13 +1001,6 @@
     }
 
 
-/* HTML A METTRE SUR LE SITE PLUS TARD : 
-<footer class="footer-minimum">
-    <div>
-      <p>Copyright © 2023 MonSite. Tous droits réservés.</p>
-    </div>
-</footer>
-*/
 /* FOOTER-MINIMUM ########################### */
 .footer-minimum {
     background-color: #333;
@@ -1154,27 +1044,6 @@
   }
     
 
-/* HTML A METTRE SUR LE SITE PLUS TARD : 
-<footer class="footer-vertical">
-    <div class="vertical_nav">
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Produits</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div class="vertical_social">
-      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
-      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
-      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
-      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
-    </div>
-    <div class="vertical_copyright">
-      <p>Copyright © 2020 MonSite. Tous droits réservés.</p>
-    </div>
-</footer>
-*/
 /* FOOTER-VERTICAL ########################### */
 .footer-vertical {
     background-color: #222;
@@ -1278,23 +1147,6 @@
 }
 
 
-/* HTML A METTRE SUR LE SITE PLUS TARD : 
-<footer class="footer-rgpd">
-    <div class="rgpd_social">
-      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
-      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
-      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
-      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
-    </div>
-    <div class="rgpd">
-      <a href="#">Politique de confidentialité</a>
-      <a href="#">Conditions d'utilisation</a>
-    </div>
-    <div class="rgpd_copyright">
-      <p>Copyright © 2020 MonSite. Tous droits réservés.</p>
-    </div>
-</footer>
-*/
 /* FOOTER-RGPD ########################### */
 .footer-rgpd {
     background-color: #333;
@@ -1389,4 +1241,3 @@
     margin-bottom: 1em;
   }
 }
-
