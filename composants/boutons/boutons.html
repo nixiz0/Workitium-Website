@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../composants.css">
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../../Workitium-custom.css">
-    <title> Workitium Composants Forms</title>
+    <title> Workitium Composants Boutons </title>
 </head>
 
 <body class="reset-html">
@@ -60,7 +60,7 @@
             <div class="sous_composants">
                 <ul class="list-reset nav_composants">
                     <h5 style="text-shadow: 0px 3px 5px rgba(0, 21, 247, 0.95);"> Positions Block </h5>
-                    
+
                     <li><a class="nav_btn" href="../positions-block/positions-block.html#txt_img_side"> txt_img_side </a></li>
                     <li><a class="nav_btn" href="../positions-block/positions-block.html#three-div"> three-div </a></li>
                 </ul>
@@ -69,61 +69,33 @@
                 <ul class="list-reset nav_composants">
                     <h5 style="text-shadow: 0px 2px 3px rgb(174, 0, 255);"> Boutons </h5>
 
-                    <li><a class="nav_btn" href="../boutons/boutons.html#btn"> btn </a></li>
-                    <li><a class="nav_btn" href="../boutons/boutons.html#btn-black"> btn-black </a></li>
-                    <li><a class="nav_btn" href="../boutons/boutons.html#btn-red"> btn-red </a></li>
-                    <li><a class="nav_btn" href="../boutons/boutons.html#btn-blue"> btn-blue </a></li>
-                    <li><a class="nav_btn" href="../boutons/boutons.html#btn-green"> btn-green </a></li>
+                    <li><a class="nav_btn" href="./boutons.html#btn"> btn </a></li>
+                    <li><a class="nav_btn" href="./boutons.html#btn-black"> btn-black </a></li>
+                    <li><a class="nav_btn" href="./boutons.html#btn-red"> btn-red </a></li>
+                    <li><a class="nav_btn" href="./boutons.html#btn-blue"> btn-blue </a></li>
+                    <li><a class="nav_btn" href="./boutons.html#btn-green"> btn-green </a></li>
                 </ul>
             </div>
-            
+
 
             <div class="separation_mobil">  </div>
         </div> 
 
         <div class="the_composants">
             <!--VOICI UN COMPOSANT-->
-            <h2 class="title_composant" id="form-basic"> #FORM-BASIC </h2>
+            <h2 class="title_composant" id="btn"> #BTN </h2>
             <span class="txt_composant">
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet minus itaque, officia ipsum nihil veniam!
+                    Simple bouton, permettant de donner un style classique.
                 </p> 
             </span>
             <div class="extrait_composants">
-                <form class="form-basic" style="margin: 0;">
-                    <div class="basic_form-group">
-                      <label for="name">Nom</label>
-                      <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
-                    </div>
-                    <div class="basic_form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
-                    </div>
-                    <div class="basic_form-group">
-                      <label for="message">Message</label>
-                      <input type="textarea" class="form-control" id="message" placeholder="Entrez votre message">
-                    </div>
-                    <button type="submit">Envoyer</button>
-                </form>
+                <button type="button" class="btn">Bouton</button>
             </div>
             <div class="code_composants">
                 <!--TEXTAREA CODE COMPOSANT-->
-                <textarea name="code" id="textarea1" cols="51" rows="19" readonly>
-<form class="form-basic">
-    <div class="basic_form-group">
-      <label form="name">Nom</label>
-      <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
-    </div>
-    <div class="basic_form-group">
-      <label form="email">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
-    </div>
-    <div class="basic_form-group">
-      <label form="message">Message</label>
-      <input type="textarea" class="form-control" id="message" placeholder="Entrez votre message">
-    </div>
-    <button type="submit">Envoyer</button>
-</form>
+                <textarea name="code" id="textarea1" cols="48" rows="2" readonly>
+<button type="button" class="btn">Bouton</button>
                 </textarea>
                 <!--FIN DU TEXTAREA CODE-->
 
@@ -134,6 +106,101 @@
             </div>
             <!--FIN DU COMPOSANT ICI-->
 
+            <!--VOICI UN COMPOSANT-->
+            <h2 class="title_composant" id="btn-black"> #BTN-BLACK </h2>
+            <span class="txt_composant">
+                <p>
+                    Bouton de couleur noir.
+                </p> 
+            </span>
+            <div class="extrait_composants">
+                <button type="button" class="btn-black">Black</button>
+            </div>
+            <div class="code_composants">
+                <!--TEXTAREA CODE COMPOSANT-->
+                <textarea name="code" id="textarea2" cols="54" rows="2" readonly>
+<button type="button" class="btn-black">Black</button>
+                </textarea>
+                <!--FIN DU TEXTAREA CODE-->
+
+                <div class="btn_copy">
+                    <button onclick="copyText('textarea2')" class="copy">Copy</button>
+                </div>
+
+            </div>
+            <!--FIN DU COMPOSANT ICI-->
+
+            <!--VOICI UN COMPOSANT-->
+            <h2 class="title_composant" id="btn-red"> #BTN-RED </h2>
+            <span class="txt_composant">
+                <p>
+                    Bouton de couleur rouge.
+                </p> 
+            </span>
+            <div class="extrait_composants">
+                <button type="button" class="btn-red">Red</button>
+            </div>
+            <div class="code_composants">
+                <!--TEXTAREA CODE COMPOSANT-->
+                <textarea name="code" id="textarea3" cols="48" rows="2" readonly>
+<button type="button" class="btn-red">Red</button>
+                </textarea>
+                <!--FIN DU TEXTAREA CODE-->
+
+                <div class="btn_copy">
+                    <button onclick="copyText('textarea3')" class="copy">Copy</button>
+                </div>
+
+            </div>
+            <!--FIN DU COMPOSANT ICI-->
+
+            <!--VOICI UN COMPOSANT-->
+            <h2 class="title_composant" id="btn-blue"> #BTN-BLUE </h2>
+            <span class="txt_composant">
+                <p>
+                    Bouton de couleur bleu.
+                </p> 
+            </span>
+            <div class="extrait_composants">
+                <button type="button" class="btn-blue">Blue</button>
+            </div>
+            <div class="code_composants">
+                <!--TEXTAREA CODE COMPOSANT-->
+                <textarea name="code" id="textarea4" cols="50" rows="2" readonly>
+<button type="button" class="btn-blue">Blue</button>
+                </textarea>
+                <!--FIN DU TEXTAREA CODE-->
+
+                <div class="btn_copy">
+                    <button onclick="copyText('textarea4')" class="copy">Copy</button>
+                </div>
+
+            </div>
+            <!--FIN DU COMPOSANT ICI-->
+
+            <!--VOICI UN COMPOSANT-->
+            <h2 class="title_composant" id="btn-green"> #BTN-GREEN </h2>
+            <span class="txt_composant">
+                <p>
+                    Bouton de couleur vert.
+                </p> 
+            </span>
+            <div class="extrait_composants">
+                <button type="button" class="btn-green">Green</button>
+            </div>
+            <div class="code_composants">
+                <!--TEXTAREA CODE COMPOSANT-->
+                <textarea name="code" id="textarea5" cols="52" rows="2" readonly>
+<button type="button" class="btn-green">Green</button>
+                </textarea>
+                <!--FIN DU TEXTAREA CODE-->
+
+                <div class="btn_copy">
+                    <button onclick="copyText('textarea5')" class="copy">Copy</button>
+                </div>
+
+            </div>
+            <!--FIN DU COMPOSANT ICI-->
 
         </div>
     </div>

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../composants.css">
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../../Workitium-custom.css">
-    <title> Workitium Composants Forms</title>
+    <title> Workitium Composants Positions Block </title>
 </head>
 
 <body class="reset-html">
@@ -60,9 +60,9 @@
             <div class="sous_composants">
                 <ul class="list-reset nav_composants">
                     <h5 style="text-shadow: 0px 3px 5px rgba(0, 21, 247, 0.95);"> Positions Block </h5>
-                    
-                    <li><a class="nav_btn" href="../positions-block/positions-block.html#txt_img_side"> txt_img_side </a></li>
-                    <li><a class="nav_btn" href="../positions-block/positions-block.html#three-div"> three-div </a></li>
+
+                    <li><a class="nav_btn" href="./positions-block.html#txt_img_side"> txt_img_side </a></li>
+                    <li><a class="nav_btn" href="./positions-block.html#three-div"> three-div </a></li>
                 </ul>
             </div>
             <div class="sous_composants">
@@ -76,54 +76,41 @@
                     <li><a class="nav_btn" href="../boutons/boutons.html#btn-green"> btn-green </a></li>
                 </ul>
             </div>
-            
+
 
             <div class="separation_mobil">  </div>
         </div> 
 
         <div class="the_composants">
             <!--VOICI UN COMPOSANT-->
-            <h2 class="title_composant" id="form-basic"> #FORM-BASIC </h2>
+            <h2 class="title_composant" id="txt_img_side"> #TXT_IMG_SIDE </h2>
             <span class="txt_composant">
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet minus itaque, officia ipsum nihil veniam!
+                    Classe permettant de placer une image à côté d'un texte et de s'adapter en Responsive, ce 
+                    qui va permettre au texte de passer en dessous de l'image
                 </p> 
             </span>
             <div class="extrait_composants">
-                <form class="form-basic" style="margin: 0;">
-                    <div class="basic_form-group">
-                      <label for="name">Nom</label>
-                      <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
+                <div class="txt_img_side" style="font-size: 2.5rem;">
+                    <div class="txt_img_side-item">
+                        <img src="" alt="image">
                     </div>
-                    <div class="basic_form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+                    <div class="txt_img_side-item">
+                        <span> lorem ipsum </span>
                     </div>
-                    <div class="basic_form-group">
-                      <label for="message">Message</label>
-                      <input type="textarea" class="form-control" id="message" placeholder="Entrez votre message">
-                    </div>
-                    <button type="submit">Envoyer</button>
-                </form>
+                </div>
             </div>
             <div class="code_composants">
                 <!--TEXTAREA CODE COMPOSANT-->
-                <textarea name="code" id="textarea1" cols="51" rows="19" readonly>
-<form class="form-basic">
-    <div class="basic_form-group">
-      <label form="name">Nom</label>
-      <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
+                <textarea name="code" id="textarea1" cols="51" rows="9" readonly>
+<div class="txt_img_side">
+    <div class="txt_img_side-item">
+        <img src="" alt="image">
     </div>
-    <div class="basic_form-group">
-      <label form="email">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+    <div class="txt_img_side-item">
+        <span> lorem ipsum </span>
     </div>
-    <div class="basic_form-group">
-      <label form="message">Message</label>
-      <input type="textarea" class="form-control" id="message" placeholder="Entrez votre message">
-    </div>
-    <button type="submit">Envoyer</button>
-</form>
+</div>
                 </textarea>
                 <!--FIN DU TEXTAREA CODE-->
 
@@ -134,6 +121,56 @@
             </div>
             <!--FIN DU COMPOSANT ICI-->
 
+            <!--VOICI UN COMPOSANT-->
+            <h2 class="title_composant" id="three-div"> #THREE-DIV</h2>
+            <span class="txt_composant">
+                <p>
+                    Classe permettant de placer 3 div une à côté de l'autre et qui devient Responsive en se plaçant
+                    l'une en dessous de l'autre quand on passe en format mobile.
+                </p> 
+            </span>
+            <div class="extrait_composants">
+                <div class="three-div" style="font-size: 1.5rem;">
+                    <div class="three-div-item">
+                        <img src="" alt="image">
+                        <p> Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="three-div-item">
+                        <img src="" alt="image">
+                        <p> Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="three-div-item">
+                        <img src="" alt="image">
+                        <p> Lorem ipsum dolor sit amet.</p>
+                    </div>
+                  </div> 
+            </div>
+            <div class="code_composants">
+                <!--TEXTAREA CODE COMPOSANT-->
+                <textarea name="code" id="textarea2" cols="51" rows="15" readonly>
+<div class="three-div">
+  <div class="three-div-item">
+      <img src="" alt="image">
+      <p> Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div class="three-div-item">
+      <img src="" alt="image">
+      <p> Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div class="three-div-item">
+      <img src="" alt="image">
+      <p> Lorem ipsum dolor sit amet.</p>
+  </div>
+</div>  
+                </textarea>
+                <!--FIN DU TEXTAREA CODE-->
+
+                <div class="btn_copy">
+                    <button onclick="copyText('textarea2')" class="copy">Copy</button>
+                </div>
+
+            </div>
+            <!--FIN DU COMPOSANT ICI-->
 
         </div>
     </div>

@@ -1058,16 +1058,6 @@
 /* CLASSES POSITIONNEMENT DE BLOCK ########################################*/
 /***************************************************************************/
 
-/* HTML Utilisation :
-<div class="txt_img_side">
-    <div class="txt_img_side-item">
-        <img src="" alt="image">
-    </div>
-    <div class="txt_img_side-item">
-        <span> lorem ipsum </span>
-    </div>
-</div>
-*/
 /*-> Permet de placer une image à côté d'un texte <- */
 .txt_img_side {
   display: flex;
@@ -1116,22 +1106,6 @@
 }
 
 
-/* HTML Utilisation :
-<div class="three-div">
-  <div class="three-div-item">
-      <img src="" alt="image">
-      <p> Lorem ipsum dolor sit amet.</p>
-  </div>
-  <div class="three-div-item">
-      <img src="" alt="image">
-      <p> Lorem ipsum dolor sit amet.</p>
-  </div>
-  <div class="three-div-item">
-      <img src="" alt="image">
-      <p> Lorem ipsum dolor sit amet.</p>
-  </div>
-</div>  
-*/
 /*-> Permet de placer 3 div à côté et Responsive <- */
 .three-div {
 display: flex;
