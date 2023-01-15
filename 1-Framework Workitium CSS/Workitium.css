@@ -229,194 +229,6 @@
 
 
 /****************************************************************************/
-/* CLASSES DES BOUTONS ####################################################*/
-/***************************************************************************/
-
-.btn {
-    padding: 0.4rem;
-    cursor: pointer;
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-}
-
-    .btn:active {
-        padding: 0.33rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-.btn-black {
-    background-color: rgb(19, 19, 19);
-    color: rgb(243, 239, 239);
-    border-radius: 10%;
-    padding: 0.4rem;
-    cursor: pointer;
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-}
-
-    .btn-black:active {
-        background-color: rgb(57, 57, 57);
-        padding: 0.33rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-.btn-red {
-    background-color: rgb(159, 27, 27);
-    color: rgb(14, 14, 14);
-    border-radius: 10%;
-    padding: 0.4rem;
-    cursor: pointer;
-    border: none;
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-}
-
-    .btn-red:active {
-        background-color: rgb(139, 27, 27);
-        padding: 0.33rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-.btn-blue {
-    background-color: rgb(16, 114, 179);
-    color: rgb(243, 239, 239);
-    border-radius: 10%;
-    padding: 0.4rem;
-    cursor: pointer;
-    border: none;
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-}
-    
-    .btn-blue:active {
-        background-color: rgb(16, 114, 179);
-        padding: 0.33rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-.btn-green {
-    background-color: rgb(23, 172, 115);
-    color: rgb(243, 239, 239);
-    border-radius: 10%;
-    padding: 0.4rem;
-    cursor: pointer;
-    border: none;
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-}
-
-    .btn-green:active {
-        background-color: rgb(21, 145, 97);
-        padding: 0.33rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-
-
-/****************************************************************************/
-/* CLASSES POSITIONNEMENT DE BLOCK ########################################*/
-/***************************************************************************/
-
-/* HTML Utilisation :
-<div class="txt_img_side">
-    <div class="txt_img_side-item">
-        <img src="" alt="image">
-    </div>
-    <div class="txt_img_side-item">
-        <span> lorem ipsum </span>
-    </div>
-</div>
-*/
-/*-> Permet de placer une image à côté d'un texte <- */
-.txt_img_side {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1rem;
-}
-
-    .txt_img_side-item {
-        padding: 1.2rem;
-        text-align: center;
-    }
-
-        .txt_img_side-item img {
-            width: 10rem; /* A REDIMENSIONNER (selon l'image) */
-            height: auto;
-        }
-
-        .txt_img_side-item span {
-
-        }
-
-@media (max-width: 600px) {
-  .txt_img_side {
-    flex-direction: column;
-  }
-}
-
-.txt_img_side-item {
-    padding: 1.2rem;
-    text-align: center;
-}
-
-.txt_img_side-item img {
-    width: 10rem; /* A REDIMENSIONNER (selon l'image) */
-    height: auto;
-}
-
-@media (max-width: 600px) {
-  .txt_img_side-item img {
-    width: 6rem;
-  }
-}
-
-.txt_img_side-item span {
-
-}
-
-
-/* HTML Utilisation :
-<div class="three-div">
-    <div class="three-div-item">
-        <img src="" alt="image">
-        <p> Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div class="three-div-item">
-        <img src="" alt="image">
-        <p> Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div class="three-div-item">
-        <img src="" alt="image">
-        <p> Lorem ipsum dolor sit amet.</p>
-    </div>
-</div>  
-*/
-/*-> Permet de placer 3 div à côté et Responsive <- */
-.three-div {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-@media (max-width: 600px) {
-  .three-div {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.three-div-item {
-    text-align: center;
-    margin: 1em;
-}
-
-
-
-/****************************************************************************/
 /* CLASSES DES ANIMATIONS #################################################*/
 /***************************************************************************/
 
@@ -443,8 +255,6 @@
         content: "TEXTE CYBERPUNK";
     }
 }
-
-
 
 
 
@@ -1241,3 +1051,191 @@
     margin-bottom: 1em;
   }
 }
+
+
+
+/****************************************************************************/
+/* CLASSES POSITIONNEMENT DE BLOCK ########################################*/
+/***************************************************************************/
+
+/* HTML Utilisation :
+<div class="txt_img_side">
+    <div class="txt_img_side-item">
+        <img src="" alt="image">
+    </div>
+    <div class="txt_img_side-item">
+        <span> lorem ipsum </span>
+    </div>
+</div>
+*/
+/*-> Permet de placer une image à côté d'un texte <- */
+.txt_img_side {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+  .txt_img_side-item {
+      padding: 1.2rem;
+      text-align: center;
+  }
+
+      .txt_img_side-item img {
+          width: 10rem; /* A REDIMENSIONNER (selon l'image) */
+          height: auto;
+      }
+
+      .txt_img_side-item span {
+
+      }
+
+@media (max-width: 600px) {
+.txt_img_side {
+  flex-direction: column;
+}
+}
+
+.txt_img_side-item {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.txt_img_side-item img {
+  width: 10rem; /* A REDIMENSIONNER (selon l'image) */
+  height: auto;
+}
+
+@media (max-width: 600px) {
+.txt_img_side-item img {
+  width: 6rem;
+}
+}
+
+.txt_img_side-item span {
+
+}
+
+
+/* HTML Utilisation :
+<div class="three-div">
+  <div class="three-div-item">
+      <img src="" alt="image">
+      <p> Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div class="three-div-item">
+      <img src="" alt="image">
+      <p> Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div class="three-div-item">
+      <img src="" alt="image">
+      <p> Lorem ipsum dolor sit amet.</p>
+  </div>
+</div>  
+*/
+/*-> Permet de placer 3 div à côté et Responsive <- */
+.three-div {
+display: flex;
+justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+.three-div {
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+.three-div-item {
+  text-align: center;
+  margin: 1em;
+}
+
+
+
+/****************************************************************************/
+/* CLASSES DES BOUTONS ####################################################*/
+/***************************************************************************/
+
+.btn {
+  padding: 0.4rem;
+  cursor: pointer;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+}
+
+  .btn:active {
+      padding: 0.33rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+
+.btn-black {
+  background-color: rgb(19, 19, 19);
+  color: rgb(243, 239, 239);
+  border-radius: 10%;
+  padding: 0.4rem;
+  cursor: pointer;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+}
+
+  .btn-black:active {
+      background-color: rgb(57, 57, 57);
+      padding: 0.33rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+
+.btn-red {
+  background-color: rgb(159, 27, 27);
+  color: rgb(14, 14, 14);
+  border-radius: 10%;
+  padding: 0.4rem;
+  cursor: pointer;
+  border: none;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+}
+
+  .btn-red:active {
+      background-color: rgb(139, 27, 27);
+      padding: 0.33rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+
+.btn-blue {
+  background-color: rgb(16, 114, 179);
+  color: rgb(243, 239, 239);
+  border-radius: 10%;
+  padding: 0.4rem;
+  cursor: pointer;
+  border: none;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+}
+  
+  .btn-blue:active {
+      background-color: rgb(16, 114, 179);
+      padding: 0.33rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+
+.btn-green {
+  background-color: rgb(23, 172, 115);
+  color: rgb(243, 239, 239);
+  border-radius: 10%;
+  padding: 0.4rem;
+  cursor: pointer;
+  border: none;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+}
+
+  .btn-green:active {
+      background-color: rgb(21, 145, 97);
+      padding: 0.33rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
